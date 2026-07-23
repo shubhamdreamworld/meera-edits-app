@@ -1,9 +1,24 @@
 [
   {
+    "version": "0.1.6",
+    "tag": "v0.1.6",
+    "date": "2026-07-23",
+    "latest": true,
+    "title": "Duplicate skipping and orientation actually work",
+    "size": "~300 MB",
+    "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.6/Meera.Edits-0.1.6-Setup.exe",
+    "release": "https://github.com/shubhamdreamworld/meera-edits-app/releases/tag/v0.1.6",
+    "notes": [
+      "Repetitive footage is now actually skipped. Duplicate detection needs an AI fingerprint per video, but the AI pass only scored the top 25% of clips — so most videos fell back to a crude pixel comparison that could not tell one take of a rafting run from another. Every video now gets a fingerprint, and a video is described by the average of its clips instead of one noisy frame.",
+      "Upside-down detection rebuilt on a reliable signal. Comparing AI confidence upright vs flipped did not work — measured on real clips, an abstract shot with no true “up” scored higher than a genuinely upside-down one. It now uses a physical cue: outdoor footage is brighter and bluer at the top, where the sky is. Separation improved to roughly a 15x margin over ambiguous footage, and it needs no AI inference so it is much faster.",
+      "Indoor, night and abstract shots have no sky gradient and are deliberately left untouched rather than risking a wrong rotation."
+    ]
+  },
+  {
     "version": "0.1.5",
     "tag": "v0.1.5",
     "date": "2026-07-23",
-    "latest": true,
+    "latest": false,
     "title": "Fixes freeze on large folders",
     "size": "~300 MB",
     "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.5/Meera.Edits-0.1.5-Setup.exe",
