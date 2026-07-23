@@ -1,9 +1,23 @@
 [
   {
+    "version": "0.1.5",
+    "tag": "v0.1.5",
+    "date": "2026-07-23",
+    "latest": true,
+    "title": "Fixes freeze on large folders",
+    "size": "~300 MB",
+    "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.5/Meera.Edits-0.1.5-Setup.exe",
+    "release": "https://github.com/shubhamdreamworld/meera-edits-app/releases/tag/v0.1.5",
+    "notes": [
+      "Fixes a freeze on large footage folders. The orientation check in 0.1.4 ran on every video up front with no progress shown, so a big shoot (170+ clips) looked stuck for minutes. It now runs only on the clips that make the final cut, after analysis, with live progress.",
+      "Includes everything from 0.1.4: true shooting-time order, repetitive-footage skipping, upside-down correction, and sharper output."
+    ]
+  },
+  {
     "version": "0.1.4",
     "tag": "v0.1.4",
     "date": "2026-07-23",
-    "latest": true,
+    "latest": false,
     "title": "Correct ordering, fewer repeats, upside-down fix",
     "size": "~300 MB",
     "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.4/Meera.Edits-0.1.4-Setup.exe",
