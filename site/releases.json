@@ -1,9 +1,24 @@
 [
   {
+    "version": "0.1.8",
+    "tag": "v0.1.8",
+    "date": "2026-07-24",
+    "latest": true,
+    "title": "Fixes a video disappearing from exports",
+    "size": "~300 MB",
+    "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.8/Meera.Edits-0.1.8-Setup.exe",
+    "release": "https://github.com/shubhamdreamworld/meera-edits-app/releases/tag/v0.1.8",
+    "notes": [
+      "Fixes silent data loss. Full Journey Coverage adds back any source video the selector skipped, but a later cleanup pass could then delete that video’s only remaining segment — removing it from the export entirely, with nothing in the log to explain it. The cleanup now never removes a source’s last segment, and says so when it holds one back.",
+      "Audited every default that alters or discards footage, by measurement rather than assumption: sharpening/denoise is closer to the source than leaving it off (SSIM 0.9918 vs 0.9899), audio peaks at −12.8 dB with no clipping, and 8 genuinely distinct scenes produced no duplicate-skipping at all.",
+      "Upside-down correction remains off by default, as of 0.1.7."
+    ]
+  },
+  {
     "version": "0.1.7",
     "tag": "v0.1.7",
     "date": "2026-07-24",
-    "latest": true,
+    "latest": false,
     "title": "Fixes videos exported upside down",
     "size": "~300 MB",
     "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.7/Meera.Edits-0.1.7-Setup.exe",
