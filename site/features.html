@@ -30,26 +30,31 @@
   <header class="page-head wrap">
     <span class="eyebrow fade-1"><span class="dot"></span> Feature tour</span>
     <h1 class="fade-2">Everything the first cut needs.<br><span class="grad">Nothing it doesn't.</span></h1>
-    <p class="fade-3">Nine core capabilities, all running locally on your Windows PC.</p>
+    <p class="fade-3">Fifteen capabilities, all running locally on your Windows PC.</p>
   </header>
 
   <section>
     <div class="wrap">
       <div class="cards-3">
-        <div class="card reveal"><div class="ic">&#129504;</div><h3>Offline AI shot selection</h3><p>A bundled MobileNetV2 neural network (ONNX) samples three frames per scene and scores subject clarity, focus confidence and visual salience — blended with classic sharpness, exposure, contrast, motion and stability metrics. Your footage never leaves the machine.</p></div>
-        <div class="card reveal"><div class="ic">&#127916;</div><h3>One run, five formats</h3><p>A single analysis pass renders a YouTube 16:9 master, a 9:16 Shorts cut capped at 60 seconds, a 1:1 square promo, a ~45-second motion-weighted teaser and a speech-free b-roll compilation.</p></div>
+        <div class="feat-cat">Smart selection</div>
+        <div class="card featured reveal"><div class="ic">&#129504;</div><h3>Offline AI shot selection</h3><p>A bundled MobileNetV2 neural network (ONNX) samples three frames per scene and scores subject clarity, focus confidence and visual salience — blended with classic sharpness, exposure, contrast, motion and stability metrics. Your footage never leaves the machine.</p></div>
+        <div class="card featured reveal"><div class="ic">&#128260;</div><h3>AI scene-similarity dedup <span class="badge-new">New</span></h3><p>Two shots of the same subject from a different angle produce similar AI embeddings but different pixel hashes. Cosine similarity between embeddings now catches them, so the same scene never repeats itself across your edit.</p></div>
         <div class="card reveal"><div class="ic">&#128483;</div><h3>Speech-safe cuts</h3><p>Silence detection snaps every cut to a natural pause. If no reliable pause exists in the window, the original boundary is kept — a sentence is never sliced in half.</p></div>
         <div class="card reveal"><div class="ic">&#128465;</div><h3>Junk &amp; duplicate rejection</h3><p>Very dark, blurry or shaky footage is filtered out, and perceptual-hash clustering keeps near-identical scenes from repeating across different clips.</p></div>
         <div class="card reveal"><div class="ic">&#128506;</div><h3>Journey coverage</h3><p>Long trip? Every source video is guaranteed at least one moment in the final cut, so no location silently disappears from your story.</p></div>
+        <div class="card reveal"><div class="ic">&#128257;</div><h3>Instant re-runs</h3><p>Visual, audio and AI scores plus rendered segments are cached per source file. Tweak a setting and re-export in a fraction of the original time.</p></div>
+
+        <div class="feat-cat">Output &amp; style</div>
+        <div class="card featured reveal"><div class="ic">&#127916;</div><h3>One run, five formats</h3><p>A single analysis pass renders a YouTube 16:9 master, a 9:16 Shorts cut capped at 60 seconds, a 1:1 square promo, a ~45-second motion-weighted teaser and a speech-free b-roll compilation.</p></div>
+        <div class="card featured reveal"><div class="ic">&#10024;</div><h3>World-class text overlays <span class="badge-new">New</span></h3><p>Five polished styles — minimal, elegant, bold, lower-third and boxed — with your choice of font, accent colour, position and fade or slide animation. Text outlines give broadcast-grade legibility on any footage.</p></div>
+        <div class="card featured reveal"><div class="ic">&#127925;</div><h3>Background music, your way <span class="badge-new">New</span></h3><p>Choose <b>None</b>, <b>Smart</b> (music only over quiet, scenic or recap sections) or <b>Whole video</b>. Original peaceful music fades in and out and is side-chain ducked under every voice.</p></div>
+        <div class="card reveal"><div class="ic">&#128250;</div><h3>Mixed orientation handling</h3><p>Portrait, landscape and square clips blend cleanly — the blurred-background fill keeps every frame full without ugly black bars.</p></div>
+
+        <div class="feat-cat">Control &amp; reliability</div>
         <div class="card reveal"><div class="ic">&#9986;&#65039;</div><h3>Visual timeline review</h3><p>Pause before render: every chosen clip becomes a card with scores and status. Open the trim studio to preview (any codec — HEVC included), set In/Out points, or drop clips entirely, with full keyboard control.</p></div>
-        <div class="card reveal"><div class="ic">&#127925;</div><h3>Background music, your call</h3><p>Choose <b>None</b>, <b>Smart</b> (music only over quiet, scenic or recap sections) or <b>Whole video</b>. Either way it fades in and out and is side-chain ducked under every voice.</p></div>
+        <div class="card featured reveal"><div class="ic">&#128203;</div><h3>Run &amp; crash log <span class="badge-new">New</span></h3><p>Every edit writes a timestamped log next to your footage. Errors and even hard crashes are recorded, so an overnight batch never fails silently — you always know exactly what happened.</p></div>
         <div class="card reveal"><div class="ic">&#127761;</div><h3>Overnight durability</h3><p>Corrupt files are skipped, transient locks retried, hung processes killed by watchdogs, and every rendered segment is checkpointed — a crash at 3am resumes where it stopped.</p></div>
         <div class="card reveal"><div class="ic">&#9889;</div><h3>GPU accelerated</h3><p>NVIDIA NVENC, Intel Quick Sync and AMD AMF encoders are auto-detected with a clean CPU fallback, and encoder choice is logged for every render.</p></div>
-      </div>
-
-      <div class="cards-3" style="margin-top:18px;">
-        <div class="card reveal"><div class="ic">&#128257;</div><h3>Instant re-runs</h3><p>Visual, audio and AI scores plus rendered segments are cached per source file. Tweak a setting and re-export in a fraction of the original time.</p></div>
-        <div class="card reveal"><div class="ic">&#128250;</div><h3>Mixed orientation handling</h3><p>Portrait, landscape and square clips blend cleanly — the blurred-background fill keeps every frame full without ugly black bars.</p></div>
         <div class="card reveal"><div class="ic">&#128274;</div><h3>Private by design</h3><p>No cloud APIs, no telemetry, no account, no installation key. Completely free to use.</p></div>
       </div>
 
