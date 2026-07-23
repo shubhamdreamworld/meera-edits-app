@@ -1,9 +1,26 @@
 [
   {
+    "version": "0.1.4",
+    "tag": "v0.1.4",
+    "date": "2026-07-23",
+    "latest": true,
+    "title": "Correct ordering, fewer repeats, upside-down fix",
+    "size": "~300 MB",
+    "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.4/Meera.Edits-0.1.4-Setup.exe",
+    "release": "https://github.com/shubhamdreamworld/meera-edits-app/releases/tag/v0.1.4",
+    "notes": [
+      "Correct shooting-time order across cameras — clips now also use the timestamp cameras put in the filename, which survives copying off a memory card (file dates do not, and used to scramble the timeline).",
+      "Skips repetitive footage — many near-identical videos (fifty takes of the same run) are grouped and only the best few are used, instead of grinding through every file.",
+      "Fixes upside-down footage — video shot with the camera the wrong way up carries no rotation metadata, so the built-in model detects it and flips it upright. Deliberately cautious: ambiguous shots are left untouched.",
+      "Sharper output — a light denoise and gentle sharpen pass on every rendered clip (Balanced and Quality modes).",
+      "Chronological by default — the auto-prepended highlights teaser is now opt-in, so a normal run stays in shooting order."
+    ]
+  },
+  {
     "version": "0.1.3",
     "tag": "v0.1.3",
     "date": "2026-07-23",
-    "latest": true,
+    "latest": false,
     "title": "Smart scene dedup, music modes & overlays",
     "size": "~300 MB",
     "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.3/Meera.Edits-0.1.3-Setup.exe",

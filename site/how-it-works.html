@@ -49,7 +49,7 @@
     <div class="wrap">
       <div class="sec-head reveal"><h2>Six steps, mostly automatic</h2></div>
       <div class="steps" style="grid-template-columns:repeat(3,1fr);">
-        <div class="step reveal"><h3>Choose your footage</h3><p>Pick the input folder. Clips are discovered recursively and sorted by recorded metadata time, with file time as fallback — your story stays chronological.</p></div>
+        <div class="step reveal"><h3>Choose your footage</h3><p>Pick the input folder. Clips are discovered recursively and sorted by true shooting time — embedded metadata first, then the timestamp cameras put in the filename, and only then the file date. That order matters: copying footage off a card resets file dates, so the filename is what keeps a mixed-camera timeline honest.</p></div>
         <div class="step reveal"><h3>Analysis &amp; AI scoring</h3><p>Every candidate scene is scored for sharpness, exposure, contrast, motion, stability and audio, then the offline neural network rates subject clarity across three sampled frames.</p></div>
         <div class="step reveal"><h3>Selection</h3><p>The best-scoring, most diverse moments are chosen. Junk is dropped, duplicates clustered, journey coverage guarantees every video appears, and cuts snap to speech pauses.</p></div>
         <div class="step reveal"><h3>Review (optional)</h3><p>With timeline review on, the app pauses and shows every clip as a card. Preview, trim In/Out with <b>I</b>/<b>O</b> keys, remove with <b>Del</b>, confirm with <b>Enter</b>.</p></div>
