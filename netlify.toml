@@ -1,0 +1,11 @@
+# Netlify configuration for the Meera Edits landing site.
+# The site is a static single page in ./site — no build step needed.
+[build]
+  publish = "site"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"

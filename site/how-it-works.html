@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works — Meera Edits</title>
+<meta name="description" content="How Meera Edits turns raw footage into a finished video: the pipeline, the editing workflow, and which options to choose.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="assets/site.js"></script>
+</head>
+<body>
+<div class="blobs"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<div class="grid-overlay"></div>
+
+<nav>
+  <div class="wrap navrow">
+    <a class="logo" href="index.html"><img src="assets/icon.png" alt="">Meera Edits</a>
+    <div class="navlinks">
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="download.html">Download</a>
+      <a href="feedback.html">Feedback</a>
+      <a class="btn primary small" href="download.html">&#11015; Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <header class="page-head wrap">
+    <span class="eyebrow fade-1"><span class="dot"></span> The workflow</span>
+    <h1 class="fade-2">From memory card to <span class="grad">upload-ready</span></h1>
+    <p class="fade-3">What happens inside the pipeline, and how to drive it.</p>
+  </header>
+
+  <section style="padding-top:20px;">
+    <div class="wrap">
+      <div class="pipeline reveal">
+        <div class="pnode">Scan &amp; sort</div><div class="parrow"></div>
+        <div class="pnode hot">Score scenes</div><div class="parrow"></div>
+        <div class="pnode">Reject junk</div><div class="parrow"></div>
+        <div class="pnode hot">Review</div><div class="parrow"></div>
+        <div class="pnode">Render</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head reveal"><h2>Six steps, mostly automatic</h2></div>
+      <div class="steps" style="grid-template-columns:repeat(3,1fr);">
+        <div class="step reveal"><h3>Choose your footage</h3><p>Pick the input folder. Clips are discovered recursively and sorted by recorded metadata time, with file time as fallback — your story stays chronological.</p></div>
+        <div class="step reveal"><h3>Analysis &amp; AI scoring</h3><p>Every candidate scene is scored for sharpness, exposure, contrast, motion, stability and audio, then the offline neural network rates subject clarity across three sampled frames.</p></div>
+        <div class="step reveal"><h3>Selection</h3><p>The best-scoring, most diverse moments are chosen. Junk is dropped, duplicates clustered, journey coverage guarantees every video appears, and cuts snap to speech pauses.</p></div>
+        <div class="step reveal"><h3>Review (optional)</h3><p>With timeline review on, the app pauses and shows every clip as a card. Preview, trim In/Out with <b>I</b>/<b>O</b> keys, remove with <b>Del</b>, confirm with <b>Enter</b>.</p></div>
+        <div class="step reveal"><h3>Music &amp; polish</h3><p>Auto music lands on scenic sections ducked under speech, voice is denoised and normalized, transitions are applied, and an animated overlay is optional.</p></div>
+        <div class="step reveal"><h3>Render &amp; verify</h3><p>Segments render in parallel (GPU when available), assemble with crossfades, and the final file is verified for duration, audio presence and A/V sync before the app calls it done.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Which options should I choose?</h2>
+        <p>Honest defaults for common situations.</p>
+      </div>
+      <div class="tablecard reveal">
+        <table>
+          <tr><th>You want&hellip;</th><th>Choose</th></tr>
+          <tr><td>A quick first look at what the AI picks</td><td><b>Turbo</b> speed &middot; Target length 1&ndash;2 min</td></tr>
+          <tr><td>The best-looking final master</td><td><b>Quality</b> speed (AI scores every scene)</td></tr>
+          <tr><td>A full trip film with every location</td><td><b>Full journey</b> duration &middot; Journey coverage <b>On</b></td></tr>
+          <tr><td>Instagram / TikTok / Shorts content</td><td>Variant pack <b>Full + Shorts</b></td></tr>
+          <tr><td>Scenic footage with music</td><td>Background music <b>Smart</b> — lands only where it belongs</td></tr>
+          <tr><td>Music under the entire video</td><td>Background music <b>Whole video</b> — ducked under speech</td></tr>
+          <tr><td>Vlog / talking footage</td><td><b>Speech snapping On</b> &middot; <b>Voice enhance On</b></td></tr>
+          <tr><td>Manual control of the final cut</td><td><b>Review timeline before render On</b></td></tr>
+          <tr><td>A 1000-clip overnight batch</td><td><b>Balanced</b> speed &middot; just let it run</td></tr>
+        </table>
+      </div>
+
+      <div class="sec-head reveal" style="margin-top:64px;">
+        <h2>Speed modes at a glance</h2>
+      </div>
+      <div class="tablecard reveal">
+        <table>
+          <tr><th>Mode</th><th>Analysis</th><th>AI depth</th><th>Render</th><th>Best for</th></tr>
+          <tr><td><b>Turbo</b></td><td>Fast scan, no audio pass</td><td>Off</td><td>Fastest preset</td><td>Previews &amp; drafts</td></tr>
+          <tr><td><b>Balanced</b></td><td>Concurrent scan, audio on shortlist</td><td>Shortlist</td><td>Good quality</td><td>Everyday edits</td></tr>
+          <tr><td><b>Quality</b></td><td>Deep scan, audio on all</td><td>All candidates</td><td>Slow preset, low CRF</td><td>Final masters</td></tr>
+        </table>
+      </div>
+
+      <div style="text-align:center; margin-top:44px;" class="reveal">
+        <a class="btn primary big" href="download.html">&#11015; Try it on your own footage</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="download.html">Download</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="https://github.com/shubhamdreamworld/meera-edits-app" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    Meera Edits &middot; Free for personal and creator use<br>
+    <span style="opacity:0.7;">&copy; 2026 Shubham Dreamworld &middot; IIT Ropar, Rupnagar, Punjab 140001</span>
+  </div>
+</footer>
+</body>
+</html>

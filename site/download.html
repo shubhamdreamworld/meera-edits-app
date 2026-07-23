@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download &amp; Versions — Meera Edits</title>
+<meta name="description" content="Download Meera Edits for Windows — every version, with its changelog. Free, no account or key required.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="assets/site.js"></script>
+</head>
+<body>
+<div class="blobs"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<div class="grid-overlay"></div>
+
+<nav>
+  <div class="wrap navrow">
+    <a class="logo" href="index.html"><img src="assets/icon.png" alt="">Meera Edits</a>
+    <div class="navlinks">
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="download.html">Download</a>
+      <a href="feedback.html">Feedback</a>
+      <a class="btn primary small" href="https://github.com/shubhamdreamworld/meera-edits-app/releases/latest" id="nav-latest">&#11015; Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <header class="page-head wrap">
+    <span class="eyebrow fade-1"><span class="dot"></span> Windows 10 / 11 &middot; 64-bit</span>
+    <h1 class="fade-2">Download <span class="grad">Meera Edits</span></h1>
+    <p class="fade-3">Free forever. No account. No installation key. Every version below is hosted on GitHub.</p>
+  </header>
+
+  <section style="padding-top:30px;">
+    <div class="wrap">
+      <!-- Latest release card (filled from releases.json) -->
+      <div id="latest-card" class="dlcard fade-4" data-tilt>
+        <div class="rel-loading">Loading the latest release&hellip;</div>
+      </div>
+
+      <div class="checklist">
+        <div class="checkrow reveal"><span class="tick">&#10003;</span><span><b>1. Download</b> the setup file for the latest version.</span></div>
+        <div class="checkrow reveal"><span class="tick">&#10003;</span><span><b>2. Run the installer.</b> Windows SmartScreen may warn because the app is new and unsigned — click <b>More info &rarr; Run anyway</b>. The full source is open on GitHub if you want to verify first.</span></div>
+        <div class="checkrow reveal"><span class="tick">&#10003;</span><span><b>3. Launch Meera Edits</b>, pick your footage folder, and press Run. ffmpeg and the AI model are bundled inside — nothing else to install.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>All versions &amp; changelog</h2>
+        <p>Every release, newest first — each with its own installer and what changed.</p>
+      </div>
+      <div id="history" class="rellist reveal">
+        <div class="rel-loading">Loading version history&hellip;</div>
+      </div>
+      <noscript>
+        <p style="text-align:center; color:var(--muted);">Browse every version on the <a href="https://github.com/shubhamdreamworld/meera-edits-app/releases" style="color:var(--accent);">GitHub releases page</a>.</p>
+      </noscript>
+      <div style="text-align:center; margin-top:30px;" class="reveal">
+        <a class="btn ghost" href="https://github.com/shubhamdreamworld/meera-edits-app/releases" target="_blank" rel="noopener">All releases on GitHub &#10148;</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head reveal"><h2>System requirements</h2></div>
+      <div class="tablecard reveal" style="max-width:660px; margin:0 auto;">
+        <table>
+          <tr><th>Component</th><th>Minimum</th></tr>
+          <tr><td><b>OS</b></td><td>Windows 10 or 11, 64-bit</td></tr>
+          <tr><td><b>RAM</b></td><td>8 GB (16 GB recommended for 4K footage)</td></tr>
+          <tr><td><b>GPU</b></td><td>Optional — NVIDIA / Intel / AMD used automatically when present</td></tr>
+          <tr><td><b>Disk</b></td><td>Roughly 2&times; your selected footage size free for temporary renders</td></tr>
+          <tr><td><b>Internet</b></td><td>Not required — analysis, AI and rendering are fully offline</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="download.html">Download</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="https://github.com/shubhamdreamworld/meera-edits-app" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    Meera Edits &middot; Free for personal and creator use<br>
+    <span style="opacity:0.7;">&copy; 2026 Shubham Dreamworld &middot; IIT Ropar, Rupnagar, Punjab 140001</span>
+  </div>
+</footer>
+
+<script>
+  // Renders the download page from releases.json — add a version there and
+  // this page (latest card + full history) updates automatically.
+  (function () {
+    const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
+    fetch('releases.json', { cache: 'no-cache' })
+      .then((r) => { if (!r.ok) throw new Error('load failed'); return r.json(); })
+      .then((rels) => {
+        if (!Array.isArray(rels) || !rels.length) throw new Error('empty');
+        const latest = rels.find((r) => r.latest) || rels[0];
+
+        // Point the nav "Get the App" button at the latest asset
+        const navBtn = document.getElementById('nav-latest');
+        if (navBtn && latest.asset) navBtn.setAttribute('href', latest.asset);
+
+        // Latest card
+        document.getElementById('latest-card').innerHTML =
+          '<div class="ver">Latest release &middot; ' + esc(latest.tag) + '</div>' +
+          '<h2>' + esc(latest.title) + '</h2>' +
+          '<div class="dlmeta">' +
+            '<span>&#128190; ' + esc(latest.size || '') + '</span>' +
+            '<span>&#129422; Windows 64-bit</span>' +
+            '<span>&#128273; No key needed</span>' +
+            '<span>&#9878;&#65039; Free to use</span>' +
+          '</div>' +
+          '<div class="cta" style="margin-top:30px;">' +
+            '<a class="btn primary big" href="' + esc(latest.asset) + '">&#11015; Download Meera Edits ' + esc(latest.version) + '</a>' +
+          '</div>' +
+          '<div class="cta-note">Served directly from <a href="' + esc(latest.release) + '" target="_blank" rel="noopener" style="color:var(--accent);">GitHub Releases</a>.</div>';
+
+        // Full history
+        document.getElementById('history').innerHTML = rels.map((r) =>
+          '<div class="rel' + (r.latest ? ' is-latest' : '') + '">' +
+            '<div class="rel-head">' +
+              '<span class="rel-ver">' + esc(r.tag) + '</span>' +
+              (r.latest ? '<span class="rel-badge">Latest</span>' : '') +
+              '<span class="rel-title">' + esc(r.title) + '</span>' +
+              '<span class="rel-date">' + esc(r.date) + '</span>' +
+            '</div>' +
+            '<ul class="rel-notes">' + r.notes.map((n) => '<li>' + esc(n) + '</li>').join('') + '</ul>' +
+            '<div class="rel-actions">' +
+              '<a class="btn primary small" href="' + esc(r.asset) + '">&#11015; Download ' + esc(r.version) + '</a>' +
+              '<a class="btn ghost small" href="' + esc(r.release) + '" target="_blank" rel="noopener">Release notes</a>' +
+              '<span class="rel-meta">' + esc(r.size || '') + ' &middot; Windows 64-bit</span>' +
+            '</div>' +
+          '</div>'
+        ).join('');
+      })
+      .catch(() => {
+        const fallback = '<div class="rel-loading">Couldn\'t load the version list. <a href="https://github.com/shubhamdreamworld/meera-edits-app/releases" style="color:var(--accent);">View all releases on GitHub &#10148;</a></div>';
+        document.getElementById('latest-card').innerHTML = fallback;
+        document.getElementById('history').innerHTML = '';
+      });
+  })();
+</script>
+</body>
+</html>

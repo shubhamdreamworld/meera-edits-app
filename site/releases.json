@@ -1,0 +1,19 @@
+[
+  {
+    "version": "0.1.3",
+    "tag": "v0.1.3",
+    "date": "2026-07-23",
+    "latest": true,
+    "title": "Smart scene dedup, music modes & overlays",
+    "size": "~300 MB",
+    "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.3/Meera.Edits-0.1.3-Setup.exe",
+    "release": "https://github.com/shubhamdreamworld/meera-edits-app/releases/tag/v0.1.3",
+    "notes": [
+      "AI scene-similarity dedup — the same scene shot from a different angle is now recognised and de-duplicated using the neural network's embeddings, not just a pixel hash.",
+      "Background music modes — choose None, Smart (scenic parts) or Whole video.",
+      "World-class text overlays — five styles (minimal, elegant, bold, lower third, boxed) with font, colour, position and animation controls.",
+      "A run log is written next to your footage so any error is recorded even if the app crashes.",
+      "Keyless install, HEVC preview, overnight durability and correct icon all included."
+    ]
+  }
+]
