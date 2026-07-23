@@ -1,9 +1,24 @@
 [
   {
+    "version": "0.1.9",
+    "tag": "v0.1.9",
+    "date": "2026-07-24",
+    "latest": true,
+    "title": "Flags camera-clock problems that scramble a timeline",
+    "size": "~300 MB",
+    "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.9/Meera.Edits-0.1.9-Setup.exe",
+    "release": "https://github.com/shubhamdreamworld/meera-edits-app/releases/tag/v0.1.9",
+    "notes": [
+      "Investigated clips appearing out of shooting order on a real 102-video folder. The ordering itself is correct — sorting by embedded recording time produced zero out-of-order clips, and for the 90 DJI files the filename and embedded times agree exactly.",
+      "The cause was bad data in the footage: 12 GoPro clips carried times contradicting their own file numbering (file 0501 dated Jun 21, 0505 and 0521 dated Jun 26, then 0526 back to Jun 21). That camera’s clock had been reset, stamping those clips four days before the rest of the trip so they sorted to the front.",
+      "A recording time that was never written cannot be recovered, so Meera Edits now splits footage on gaps over 12 hours and reports the groups — you can see immediately which camera is misdated instead of guessing why the timeline jumps."
+    ]
+  },
+  {
     "version": "0.1.8",
     "tag": "v0.1.8",
     "date": "2026-07-24",
-    "latest": true,
+    "latest": false,
     "title": "Fixes a video disappearing from exports",
     "size": "~300 MB",
     "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.8/Meera.Edits-0.1.8-Setup.exe",
