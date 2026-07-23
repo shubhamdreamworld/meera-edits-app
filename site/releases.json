@@ -1,9 +1,24 @@
 [
   {
+    "version": "0.1.7",
+    "tag": "v0.1.7",
+    "date": "2026-07-24",
+    "latest": true,
+    "title": "Fixes videos exported upside down",
+    "size": "~300 MB",
+    "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.7/Meera.Edits-0.1.7-Setup.exe",
+    "release": "https://github.com/shubhamdreamworld/meera-edits-app/releases/tag/v0.1.7",
+    "notes": [
+      "Fixes exports coming out upside down. Version 0.1.6 detected upside-down clips by assuming the sky is brighter and bluer at the top. On rafting footage — brown water high, a bright blue raft low — the raft was read as sky and correctly-shot video was flipped.",
+      "Automatic orientation correction is now off by default. Wrongly rotating good footage is worse than leaving one clip upside down, so it is opt-in via the new “Fix upside-down clips” option rather than something that can silently ruin an export.",
+      "With default settings no orientation changes are made to your footage at all. Everything else from 0.1.6 (repetitive-footage skipping, shooting-time order, sharper output) is unchanged."
+    ]
+  },
+  {
     "version": "0.1.6",
     "tag": "v0.1.6",
     "date": "2026-07-23",
-    "latest": true,
+    "latest": false,
     "title": "Duplicate skipping and orientation actually work",
     "size": "~300 MB",
     "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.6/Meera.Edits-0.1.6-Setup.exe",
