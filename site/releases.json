@@ -1,9 +1,27 @@
 [
   {
+    "version": "0.2.0",
+    "tag": "v0.2.0",
+    "date": "2026-07-25",
+    "latest": true,
+    "title": "Smarter AI selection, portrait reframing, and a simpler screen",
+    "size": "~360 MB",
+    "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.2.0/Meera.Edits-0.2.0-Setup.exe",
+    "release": "https://github.com/shubhamdreamworld/meera-edits-app/releases/tag/v0.2.0",
+    "notes": [
+      "Optional \"Best quality\" AI (CLIP) that judges whether a shot is actually good — sharper clip selection, smarter duplicate detection, and keeping the best of repeated takes.",
+      "Smart reframe for vertical and square exports: instead of blurred letterbox bars, it crops to the important area and fills the frame — and with the AI on, it detects people and keeps them from being cropped out.",
+      "Research-backed selection: keeps the most representative shot of each repeated scene, and can favour clips with a stand-out sound — a cheer, a splash, a laugh.",
+      "Optional finishing: colour-match footage from different cameras, cut wind noise, and a gentle Ken Burns zoom on scenic shots.",
+      "A much simpler screen — the default view drops from about 56 controls to the dozen that matter, with the rest one click away under \"Show advanced\" (and a bug that always showed the advanced controls is fixed).",
+      "Faster, sturdier rendering on long clips, with cleaner logs. Everything new is off by default, so your existing edits are unchanged until you turn a feature on."
+    ]
+  },
+  {
     "version": "0.1.9",
     "tag": "v0.1.9",
     "date": "2026-07-24",
-    "latest": true,
+    "latest": false,
     "title": "Flags camera-clock problems that scramble a timeline",
     "size": "~300 MB",
     "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.1.9/Meera.Edits-0.1.9-Setup.exe",
