@@ -1,9 +1,29 @@
 [
   {
+    "version": "0.7.0",
+    "tag": "v0.7.0",
+    "date": "2026-09-11",
+    "latest": true,
+    "title": "Search, talk mode, two-camera sync, and much smarter selection",
+    "size": "~587 MB",
+    "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.7.0/Meera.Edits-0.7.0-Setup.exe",
+    "release": "https://github.com/shubhamdreamworld/meera-edits-app/releases/tag/v0.7.0",
+    "notes": [
+      "Selection now ranks appeal, not just cleanliness — an on-device CLIP model judges whether a shot is actually good, blended with people in frame, motion, speech and stand-out sounds. Every kept clip explains itself; a skipped clip now names the specific rival that beat it, with the numbers side by side (\"Why not this one?\").",
+      "Reels rebuilt: a strict 60-second best-of cut with face-anchored portrait reframe, cut to music Meera generates herself with a known tempo, captions burned in. Karaoke captions light each word as it's spoken; every other caption ships as a switchable subtitle track plus a .srt file, not painted onto the picture.",
+      "Search your footage by describing a moment (\"the bit where we're eating by the sea\") and get timecodes back, built from the same analysis pass. Meera also names what's in the clip — dog, food, car and more — as filter chips.",
+      "Talk mode ranks a lecture, interview or wedding speech by what was said. Two cameras from one event are matched by what both microphones heard, correcting a wrong camera clock only on audio proof. Cuts now start and finish on a full sentence, not just the end.",
+      "Captions in your language: an optional multilingual model recognises Hindi, Marathi, Gujarati, Punjabi, Bengali, Tamil, Telugu, Urdu, Spanish, French and more, with translate-to-English. \"Or just describe it\" reads a plain-English brief into settings entirely offline.",
+      "Much faster: one decode pass per video shared across every model, machine-aware concurrency, and working GPU encoding. 4K export with an output-quality tier that never needlessly upscales 1080p footage. Installer trimmed by removing platform binaries that can't run on Windows.",
+      "Queue folders, watch a folder for new clips, save and reopen projects, resume a stopped job, undo and drag-to-reorder in review, and a restyled interface following Windows light/dark. A four-part review sweep fixed squashed Reels, a stabiliser that never stabilised, and several more real defects.",
+      "Five versions folded into one release since v0.2.0 — everything above is off by default unless noted, so existing behaviour is unchanged until you turn a feature on."
+    ]
+  },
+  {
     "version": "0.2.0",
     "tag": "v0.2.0",
     "date": "2026-07-25",
-    "latest": true,
+    "latest": false,
     "title": "Smarter AI selection, portrait reframing, and a simpler screen",
     "size": "~360 MB",
     "asset": "https://github.com/shubhamdreamworld/meera-edits-app/releases/download/v0.2.0/Meera.Edits-0.2.0-Setup.exe",
