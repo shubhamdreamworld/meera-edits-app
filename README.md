@@ -13,8 +13,8 @@ no account, no subscription.
 - **Latest installer:** [Releases](https://github.com/shubhamdreamworld/meera-edits-app/releases/latest)
 
 Windows 10/11 (64-bit). Run the installer — ffmpeg and the AI models are bundled.
-Every installer's SHA-256 is listed in [`site/releases.json`](site/releases.json) and on the
-download page; check it with `Get-FileHash <file> -Algorithm SHA256` in PowerShell.
+json`](site/releases.json) and on the
+download page; check it with `Get-FileHash <file>
 
 ## Privacy
 
