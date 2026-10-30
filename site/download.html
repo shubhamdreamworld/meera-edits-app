@@ -87,9 +87,14 @@
           <tr><td><b>RAM</b></td><td>8 GB (16 GB recommended for 4K footage)</td></tr>
           <tr><td><b>GPU</b></td><td>Optional — NVIDIA / Intel / AMD used automatically when present</td></tr>
           <tr><td><b>Disk</b></td><td>Roughly 2&times; your selected footage size free for temporary renders</td></tr>
-          <tr><td><b>Internet</b></td><td>Not required — analysis, AI and rendering are fully offline</td></tr>
+          <tr><td><b>Internet</b></td><td>Not required — analysis, AI and rendering are fully offline. One opt-in feature, "internet music", downloads a public-domain background track from archive.org when you turn it on; it sends only a fixed search for ambient public-domain music, never your footage.</td></tr>
         </table>
       </div>
+      <p class="reveal" style="max-width:660px; margin:18px auto 0; color:var(--muted); font-size:0.95em;" id="verify-note">
+        <b>Check your download:</b> every installer's SHA-256 is listed with its version above (and on its GitHub release page). In PowerShell run
+        <code>Get-FileHash .\Meera.Edits-0.7.0-Setup.exe -Algorithm SHA256</code> and compare. Meera Edits is free and open source under the MIT licence; the code lives at
+        <a href="https://github.com/shubhamdreamworld/meera-edits" target="_blank" rel="noopener" style="color:var(--accent);">github.com/shubhamdreamworld/meera-edits</a>.
+      </p>
     </div>
   </section>
 </main>
@@ -103,7 +108,7 @@
       <a href="feedback.html">Feedback</a>
       <a href="https://github.com/shubhamdreamworld/meera-edits-app" target="_blank" rel="noopener">GitHub</a>
     </div>
-    Meera Edits &middot; Free for personal and creator use<br>
+    Meera Edits &middot; Free and open source under the <a href="https://github.com/shubhamdreamworld/meera-edits/blob/main/LICENSE" target="_blank" rel="noopener">MIT licence</a><br>
     <span style="opacity:0.7;">&copy; 2026 Shubham Dreamworld &middot; IIT Ropar, Rupnagar, Punjab 140001</span>
   </div>
 </footer>
@@ -136,7 +141,8 @@
           '<div class="cta" style="margin-top:30px;">' +
             '<a class="btn primary big" href="' + esc(latest.asset) + '">&#11015; Download Meera Edits ' + esc(latest.version) + '</a>' +
           '</div>' +
-          '<div class="cta-note">Served directly from <a href="' + esc(latest.release) + '" target="_blank" rel="noopener" style="color:var(--accent);">GitHub Releases</a>.</div>';
+          '<div class="cta-note">Served directly from <a href="' + esc(latest.release) + '" target="_blank" rel="noopener" style="color:var(--accent);">GitHub Releases</a>.</div>' +
+          (latest.sha256 ? '<div class="cta-note" style="margin-top:8px; word-break:break-all;">SHA-256 <code>' + esc(latest.sha256) + '</code></div>' : '');
 
         // Full history
         document.getElementById('history').innerHTML = rels.map((r) =>
@@ -153,6 +159,7 @@
               '<a class="btn ghost small" href="' + esc(r.release) + '" target="_blank" rel="noopener">Release notes</a>' +
               '<span class="rel-meta">' + esc(r.size || '') + ' &middot; Windows 64-bit</span>' +
             '</div>' +
+            (r.sha256 ? '<div class="rel-meta" style="margin-top:6px; word-break:break-all; font-size:0.85em;">SHA-256 <code>' + esc(r.sha256) + '</code></div>' : '') +
           '</div>'
         ).join('');
       })

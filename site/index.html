@@ -61,7 +61,7 @@
     <div class="wrap">
       <div class="sec-head reveal">
         <h2>The first cut, <span class="grad">automated</span></h2>
-        <p>Every stage runs locally with a bundled neural network — nothing ever leaves your PC.</p>
+        <p>Every stage runs locally with bundled neural networks — your footage never leaves your PC. The one optional exception: if you turn on "internet music", Meera downloads a public-domain track from archive.org for the background bed; it is off by default and sends only a fixed search for ambient public-domain music, never your video.</p>
       </div>
       <div class="cards-3">
         <div class="card reveal"><div class="ic">&#129504;</div><h3>Offline AI shot selection</h3><p>A bundled ONNX neural network scores every scene for subject clarity, focus and salience.</p></div>
@@ -78,39 +78,40 @@
     <div class="wrap">
       <div class="whatsnew reveal">
         <div class="wn-head">
-          <span class="wn-tag"><span class="cd"></span> New in v0.1.4</span>
-          <h2>Built for big, <span class="grad">messy folders</span></h2>
+          <span class="wn-tag"><span class="cd"></span> New in v0.7.0</span>
+          <h2>Meera explains herself, <span class="grad">and finds the moment you mean</span></h2>
         </div>
         <div class="spot-grid">
           <div class="spot">
-            <div class="spot-ic">&#128337;</div>
+            <div class="spot-ic">&#129504;</div>
             <div>
-              <h3>Correct order, every camera <span class="badge-new">New</span></h3>
-              <p>Clips land in true shooting order even across different cameras. Copying footage off a card resets its file date — so Meera Edits also reads the timestamp cameras put in the <b>filename</b>, which survives copying and keeps your timeline honest.</p>
+              <h3>Selection that ranks appeal <span class="badge-new">New</span></h3>
+              <p>An on-device CLIP model judges whether a shot is actually <b>good</b>, blended with people in frame, motion, speech and stand-out sounds. Every kept clip explains itself, and a skipped clip names the rival that beat it with the numbers side by side — <b>"Why not this one?"</b></p>
             </div>
           </div>
           <div class="spot">
-            <div class="spot-ic">&#128465;</div>
+            <div class="spot-ic">&#128269;</div>
             <div>
-              <h3>Skips repetitive footage <span class="badge-new">New</span></h3>
-              <p>Fifty takes of the same rafting run? They're grouped as one scene and only the <b>best few</b> are used — pulling the strongest moments from those instead of grinding through every single file.</p>
+              <h3>Search your footage <span class="badge-new">New</span></h3>
+              <p>Describe a moment — <i>"the bit where we're eating by the sea"</i> — and get timecodes back, from the same offline analysis pass. Meera also names what is in each clip (dog, food, car…) as filter chips, and <b>"Or just describe it"</b> turns a plain sentence into settings.</p>
             </div>
           </div>
           <div class="spot">
-            <div class="spot-ic">&#128260;</div>
+            <div class="spot-ic">&#127908;</div>
             <div>
-              <h3>Fixes upside-down clips <span class="badge-new">New</span></h3>
-              <p>Footage shot with the camera the wrong way up carries no rotation data, so nothing could fix it. The built-in model now spots it and turns it upright — and stays cautious, leaving shots with no clear "up" untouched.</p>
+              <h3>Talk mode and two cameras <span class="badge-new">New</span></h3>
+              <p>A lecture, interview or wedding speech is ranked by <b>what was said</b>. Two cameras from one event are lined up by what both microphones heard, and a wrong camera clock is corrected only on audio proof. Cuts start and finish on a full sentence.</p>
             </div>
           </div>
           <div class="spot">
-            <div class="spot-ic">&#10024;</div>
+            <div class="spot-ic">&#127925;</div>
             <div>
-              <h3>Sharper output <span class="badge-new">New</span></h3>
-              <p>A light denoise and gentle sharpen pass on every rendered clip, so the finished video looks cleaner than the raw footage. Automatic in Balanced and Quality modes.</p>
+              <h3>Reels, karaoke captions, your language <span class="badge-new">New</span></h3>
+              <p>A strict 60-second best-of Reel with face-anchored portrait reframe, cut to music Meera generates herself. <b>Karaoke captions</b> light each word as it is spoken; an optional multilingual model captions Hindi, Marathi, Gujarati, Punjabi, Bengali, Tamil, Telugu, Urdu, Spanish, French and more, with translate-to-English.</p>
             </div>
           </div>
         </div>
+        <p class="reveal" style="margin-top:22px; color:var(--muted); font-size:0.95em;">Also in 0.7.0: one decode pass per video (much faster), working GPU encoding, 4K export, queue and watch folders, saved projects, resume and undo. Everything new is off by default. <a href="download.html#history" style="color:var(--accent);">Full changelog &#10148;</a></p>
       </div>
     </div>
   </section>
@@ -149,7 +150,7 @@
       <a href="feedback.html">Feedback</a>
       <a href="https://github.com/shubhamdreamworld/meera-edits-app" target="_blank" rel="noopener">GitHub</a>
     </div>
-    Meera Edits &middot; Free for personal and creator use<br>
+    Meera Edits &middot; Free and open source under the <a href="https://github.com/shubhamdreamworld/meera-edits/blob/main/LICENSE" target="_blank" rel="noopener">MIT licence</a><br>
     <span style="opacity:0.7;">&copy; 2026 Shubham Dreamworld &middot; IIT Ropar, Rupnagar, Punjab 140001</span>
   </div>
 </footer>
