@@ -31,7 +31,7 @@ Feature requests and feedback: https://meeraedits.netlify.app/feedback.html
 ## Licence and source
 
 Meera Edits is free and open source under the **MIT licence**. The application's source
-code lives at https://github.com/shubhamdreamworld/meera-edits (`LICENSE` in that repo).
+code lives at https://github.com/shubhamdreamworld/meera-edits-app (`LICENSE` in that repo).
 This repository holds only the website (`site/`) and the installer downloads attached to its
 releases; it is published under the same MIT licence.
 
